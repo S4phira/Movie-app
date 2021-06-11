@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Youtube Channels</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<header class="wrapper__header">
+	<h1 class="header">Movie app</h1>
+
+</header>
+<main>
+	<div class="filter">
+		<input class="filter__input" id="movie-filter" type="text" placeholder="filter channels">
+	</div>
+	<div class="main">
+		<div class="main__left-column">
+			<div class="sort">
+				<h3 class="sort__header">Sort channels by:</h3>
+				<ul class="sort__options">
+					<li>
+						<input class="choice choice--radio" name="sort" type="radio" id="sort-title">
+						<label class="choice__label" for="sort-title">title</label>
+					</li>
+					<li>
+						<input class="choice choice--radio" name="sort" type="radio" id="sort-popularity">
+						<label class="choice__label" for="sort-popularity">popularity</label>
+					</li>
+					<li>
+						<input class="choice choice--radio" name="sort" type="radio" id="sort-votes">
+						<label class="choice__label" for="sort-votes">votes count</label>
+					</li>
+					<li>
+						<input class="choice choice--radio" name="sort" type="radio" id="sort-rank">
+						<label class="choice__label" for="sort-rank">rank</label>
+					</li>
+				</ul>
+				<button class="button" id="button-clear">Clear</button>
+			</div>
+		</div>
+		<div class="main__right-column">
+			<div id="main__movies" class="main__movies">
+			</div>
+		</div>
+		
+	</div>
+	
+</main>
+<script  src="../src/main.js"></script>
+</body>
+
+</html>
