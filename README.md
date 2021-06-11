@@ -64,7 +64,5 @@ Server address will appear in the terminal.
     
 *   Create a pull request from the branch with your solution to _master_ branch in your repository. 
     We will go through it and comment your work based on it.
-
-*   Add `jakub.x.luczak@gsk.com` user to view your repository and send e-mail with repo/pull request url to the same e-mail address. 
     
 Good luck!
