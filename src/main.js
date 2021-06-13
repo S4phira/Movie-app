@@ -42,8 +42,9 @@ moreButton.addEventListener('click', () => {
 });
 
 getMoviesList();
+
 async function getMoviesList() {
-    const response = await fetch('../server/videos.json');
+    const response = await fetch('http://127.0.0.1:3000/api/videos.json');
     const movies = await response.json();
     movies.results.forEach(element => {
         moviesResult.push({
@@ -54,11 +55,10 @@ async function getMoviesList() {
             vote_count : element.vote_count,
             popularity : element.popularity
         });
-    });
+    })
     addMovie(moviesResult)
 }
   
-
 function sortByTitle(arrayToSort){
     let sortMoviesByTitle = arrayToSort.slice().sort((a, b) => a.title.localeCompare(b.title))
     addMovie(sortMoviesByTitle);
